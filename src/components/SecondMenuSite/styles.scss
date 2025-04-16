@@ -1,0 +1,17 @@
+.second-container-box {
+  margin: 0 10px;
+  
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 28px;
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  span {
+    color: #FFF;
+    font-size: 16px;
+  }
+}

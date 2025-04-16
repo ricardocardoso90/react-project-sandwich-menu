@@ -1,0 +1,184 @@
+.container {
+  height: 275px;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url("../../assets/menu-background.jpeg");
+  background-size: cover;
+
+  ul {
+    display: none;
+  }
+
+  .logo {
+    img {
+      width: 100px;
+      display: none;
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .first-container {
+    display: flex;
+    height: 200px;
+
+    @media(width < 900px) {
+      display: none;
+    }
+  }
+
+  .second-container {
+    height: 75px;
+    padding: 10px;
+    background-color: #10404B;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(width < 900px) {
+      display: none;
+    }
+  }
+
+  .menu-toggle-produtos {
+    display: none;
+  }
+
+  .animation {
+    margin: 20px 0;
+
+    .title {
+      height: 50px;
+      margin: 20px 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        font-size: 28px;
+        font-weight: 600;
+        color: #243352;
+        font-family: "Kanit", sans-serif;
+      }
+
+      a {
+        font-size: 18px;
+        font-weight: 400;
+        color: #243352;
+        font-family: "Kanit", sans-serif;
+      }
+    }
+
+    .products {
+      padding: 20px 0;
+      overflow: scroll;
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .buttons {
+      height: 50px;
+      margin: 20px 0;
+      gap: 10px;
+      display: flex;
+      align-items: center;
+
+      @media(width < 900px) {
+        display: none;
+      }
+
+      .circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 2px solid #777;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      span {
+        width: 7px;
+        height: 7px;
+        border-radius: 50px;
+        background-color: #000;
+      }
+    }
+  }
+}
+
+@media(width < 900px) {
+  .container {
+    background-image: none;
+
+    .area {
+      height: 265px;
+      padding: 0 40px;
+      background-image: url("../../assets/menu-background.jpeg");
+      background-size: cover;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        img {
+          width: 235px;
+          display: flex;
+        }
+      }
+
+      .menu-toggle {
+        display: flex;
+        width: 8rem;
+        height: 8rem;
+        cursor: pointer;
+      }
+    }
+
+    .menu-toggle-produtos {
+      padding: 40px 40px;
+      background-color: #10404B;
+
+      display: flex;
+      flex-direction: column;
+
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: anime-down .7s forwards;
+
+      .first-second-container {
+        display: flex;
+      }
+
+      @keyframes anime-down {
+        to {
+          opacity: 1;
+          transform: initial;
+        }
+      }
+    }
+
+    .animation {
+      padding: 0 40px;
+
+      .title {
+        margin: 40px 0;
+
+        span {
+          font-size: 54px;
+        }
+
+        a {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+}

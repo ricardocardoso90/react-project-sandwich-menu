@@ -1,0 +1,12 @@
+.menu-infos {
+  flex: 1;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+
+  span {
+    color: #FFF;
+    font-size: 40px;
+  }
+}

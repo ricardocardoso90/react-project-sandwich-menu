@@ -1,0 +1,22 @@
+.menu-toggle-produtos-right {
+  flex: 1;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .menu-toggle-produtos-right-box {
+    font-size: 23px;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 20px;
+    }
+
+    span {
+      color: #FFF;
+      font-size: 40px;
+    }
+  } 
+}
